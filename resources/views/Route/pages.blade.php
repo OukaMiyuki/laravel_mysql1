@@ -1,0 +1,9 @@
+@if(\Request::is('tambah'))
+    @include('Pages.add')
+@elseif(\Request::is('admin/pages/view/daftar_anggota'))
+    @include('Web.pages.Daftar_Anggota')
+@elseif(\Request::is('admin/pages/view/daftar_user'))
+    @include('Web.pages.Daftar_User')
+@elseif(\Request::is('admin/pages/view/member/simpan'))
+    @include('Web.pages.Data_Simpanan')
+@endif

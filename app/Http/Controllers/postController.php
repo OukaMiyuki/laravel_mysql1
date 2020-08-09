@@ -6,5 +6,7 @@ use Illuminate\Http\Request;
 
 class postController extends Controller
 {
-
+    public function tambah(){
+        return view('Layout.index');
+    }
 }
